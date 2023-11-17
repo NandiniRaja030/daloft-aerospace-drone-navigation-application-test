@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Daloft Aerospace - Drone Navigation Application</title>
+    <meta
+      property="og:title"
+      content="Daloft Aerospace - Drone Navigation Application"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <style>
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <header data-role="Header" class="home-header">
+          <img
+            alt="logo"
+            src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
+            class="home-image"
+          />
+          <div class="home-nav">
+            <nav
+              class="navigation-links1-nav navigation-links1-root-class-name17"
+            >
+              <span class="navigation-links1-text">
+                <span>Compass Calibration</span>
+              </span>
+              <span class="navigation-links1-text1">
+                <span>Accelerometer Calibration</span>
+              </span>
+              <span class="navigation-links1-text2">
+                <span>Altitude Hold</span>
+              </span>
+              <span class="navigation-links1-text3"><span>GPS Hold</span></span>
+              <span class="navigation-links1-text4">
+                <span>Pitch &amp; Roll</span>
+              </span>
+              <span class="navigation-links1-text5"><span>Yaw</span></span>
+              <span class="navigation-links1-text6">
+                <span>Telemetry Data</span>
+              </span>
+              <span class="navigation-links1-text7"><span>Messages</span></span>
+            </nav>
+          </div>
+        </header>
+        <div class="home-container01">
+          <div data-thq="thq-dropdown" class="home-thq-dropdown list-item">
+            <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle">
+              <span class="home-text">Select Com</span>
+              <div data-thq="thq-dropdown-arrow" class="home-dropdown-arrow">
+                <svg viewBox="0 0 1024 1024" class="home-icon">
+                  <path d="M426 726v-428l214 214z"></path>
+                </svg>
+              </div>
+            </div>
+            <ul data-thq="thq-dropdown-list" class="home-dropdown-list">
+              <li data-thq="thq-dropdown" class="home-dropdown list-item">
+                <div
+                  data-thq="thq-dropdown-toggle"
+                  class="home-dropdown-toggle1"
+                >
+                  <span class="home-text01">Com 1</span>
+                </div>
+              </li>
+              <li data-thq="thq-dropdown" class="home-dropdown1 list-item">
+                <div
+                  data-thq="thq-dropdown-toggle"
+                  class="home-dropdown-toggle2"
+                >
+                  <span class="home-text02">Com 2</span>
+                </div>
+              </li>
+              <li data-thq="thq-dropdown" class="home-dropdown2 list-item">
+                <div
+                  data-thq="thq-dropdown-toggle"
+                  class="home-dropdown-toggle3"
+                >
+                  <span class="home-text03">Com 4</span>
+                </div>
+              </li>
+              <li data-thq="thq-dropdown" class="home-dropdown3 list-item">
+                <div
+                  data-thq="thq-dropdown-toggle"
+                  class="home-dropdown-toggle4"
+                >
+                  <span class="home-text04">Com 4</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="home-button button">Connect</button>
+          <input type="radio" name="radio" class="home-radiobutton" />
+        </div>
+        <div class="home-container02">
+          <div class="home-container03">
+            <div class="home-container04">
+              <div class="home-container05">
+                <span class="home-text05">
+                  <span>Compass</span>
+                  <br />
+                  <span class="home-text08">claibration</span>
+                </span>
+              </div>
+              <div class="home-container06">
+                <div class="home-container07">
+                  <span class="home-text09">X</span>
+                  <input type="radio" name="radio" />
+                </div>
+                <div class="home-container08">
+                  <span class="home-text10">Y</span>
+                  <input type="radio" name="radio" />
+                </div>
+                <div class="home-container09">
+                  <span class="home-text11">Z</span>
+                  <input type="radio" name="radio" />
+                </div>
+                <div class="home-container10">
+                  <button type="button" class="home-button1 button">
+                    CALIBRATE
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="home-container11">
+              <div class="home-container12">
+                <span class="home-text12">
+                  <span>accelerometer&nbsp;&nbsp;</span>
+                  <br />
+                  <span class="home-text15">claibration</span>
+                </span>
+              </div>
+              <div class="home-container13">
+                <div class="home-container14">
+                  <span class="home-text16">Status :</span>
+                  <input type="radio" name="radio" class="home-radiobutton4" />
+                </div>
+                <div class="home-container15">
+                  <button type="button" class="home-button2 button">
+                    CALIBRATE
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-container16">
+            <div class="home-container17">
+              <div class="home-container18">
+                <span class="home-text17">Altitude hold</span>
+              </div>
+              <div class="home-container19">
+                <div class="home-container20">
+                  <span class="home-text18">P</span>
+                  <input
+                    type="number"
+                    placeholder="placeholder"
+                    class="home-textinput input"
+                  />
+                </div>
+                <div class="home-container21">
+                  <span class="home-text19">I</span>
+                  <input
+                    type="number"
+                    placeholder="placeholder"
+                    class="home-textinput01 input"
+                  />
+                </div>
+                <div class="home-container22">
+                  <span class="home-text20">D</span>
+                  <input
+                    type="number"
+                    placeholder="placeholder"
+                    class="home-textinput02 input"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="home-container23">
+              <div class="home-container24">
+                <span class="home-text21">pitch &amp; roll</span>
+              </div>
+              <div class="home-container25">
+                <div class="home-container26">
+                  <span class="home-text22">P</span>
+                  <input
+                    type="number"
+                    placeholder="placeholder"
+                    class="home-textinput03 input"
+                  />
+                </div>
+                <div class="home-container27">
+                  <span class="home-text23">I</span>
+                  <input
+                    type="number"
+                    placeholder="placeholder"
+                    class="home-textinput04 input"
+                  />
+                </div>
+                <div class="home-container28">
+                  <span class="home-text24">D</span>
+                  <input
+                    type="number"
+                    placeholder="placeholder"
+                    class="home-textinput05 input"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-container29">
+            <div class="home-container30">
+              <div class="home-container31">
+                <span class="home-text25">gps hold</span>
+              </div>
+              <div class="home-container32">
+                <div class="home-container33">
+                  <span class="home-text26">P</span>
+                  <input
+                    type="number"
+                    placeholder="placeholder"
+                    class="home-textinput06 input"
+                  />
+                </div>
+                <div class="home-container34">
+                  <span class="home-text27">I</span>
+                  <input
+                    type="number"
+                    placeholder="placeholder"
+                    class="home-textinput07 input"
+                  />
+                </div>
+                <div class="home-container35">
+                  <span class="home-text28">D</span>
+                  <input
+                    type="number"
+                    placeholder="placeholder"
+                    class="home-textinput08 input"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="home-container36">
+              <div class="home-container37">
+                <span class="home-text29">yaw</span>
+              </div>
+              <div class="home-container38">
+                <div class="home-container39">
+                  <span class="home-text30">P</span>
+                  <input
+                    type="number"
+                    placeholder="placeholder"
+                    class="home-textinput09 input"
+                  />
+                </div>
+                <div class="home-container40">
+                  <span class="home-text31">I</span>
+                  <input
+                    type="number"
+                    placeholder="placeholder"
+                    class="home-textinput10 input"
+                  />
+                </div>
+                <div class="home-container41">
+                  <span class="home-text32">D</span>
+                  <input
+                    type="number"
+                    placeholder="placeholder"
+                    class="home-textinput11 input"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-container42">
+            <div class="home-container43">
+              <div class="home-container44">
+                <span class="home-text33">telemetry data</span>
+              </div>
+              <div class="home-container45">
+                <div class="home-container46">
+                  <div class="home-container47">
+                    <span class="home-text34">Text</span>
+                    <span class="home-text35">00.00</span>
+                  </div>
+                  <div class="home-container48">
+                    <span class="home-text36">Text</span>
+                    <span class="home-text37">00.00</span>
+                  </div>
+                  <div class="home-container49">
+                    <span class="home-text38">Text</span>
+                    <span class="home-text39">00.00</span>
+                  </div>
+                </div>
+                <div class="home-container50">
+                  <div class="home-container51">
+                    <span class="home-text40">Text</span>
+                    <span class="home-text41">00.00</span>
+                  </div>
+                  <div class="home-container52">
+                    <span class="home-text42">Text</span>
+                    <span class="home-text43">00.00</span>
+                  </div>
+                  <div class="home-container53">
+                    <span class="home-text44">Text</span>
+                    <span class="home-text45">00.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="home-container54">
+                <span class="home-text46">flight mode</span>
+                <div class="home-container55">
+                  <span class="home-text47">Manual</span>
+                </div>
+              </div>
+              <div class="home-container56">
+                <span class="home-text48">waypoints</span>
+              </div>
+              <div class="home-container57">
+                <div class="home-container58">
+                  <span class="home-text49">1.</span>
+                  <span class="home-text50">Text</span>
+                </div>
+                <div class="home-container59">
+                  <span class="home-text51">1.</span>
+                  <span class="home-text52">Text</span>
+                </div>
+                <div class="home-container60">
+                  <span class="home-text53">1.</span>
+                  <span class="home-text54">Text</span>
+                </div>
+                <div class="home-container61">
+                  <span class="home-text55">1.</span>
+                  <span class="home-text56">Text</span>
+                </div>
+                <div class="home-container62">
+                  <span class="home-text57">1.</span>
+                  <span class="home-text58">Text</span>
+                </div>
+                <div class="home-container63">
+                  <span class="home-text59">1.</span>
+                  <span class="home-text60">Text</span>
+                </div>
+              </div>
+            </div>
+            <div class="home-container64">
+              <div class="home-container65">
+                <span class="home-text61">MESSAGES</span>
+              </div>
+              <div class="home-container66">
+                <div class="home-container67">
+                  <span class="home-text62">Text</span>
+                </div>
+                <div class="home-container68">
+                  <span class="home-text63">Text</span>
+                </div>
+                <div class="home-container69">
+                  <span class="home-text64">Text</span>
+                </div>
+                <div class="home-container70">
+                  <span class="home-text65">Text</span>
+                </div>
+                <div class="home-container71">
+                  <span class="home-text66">Text</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
