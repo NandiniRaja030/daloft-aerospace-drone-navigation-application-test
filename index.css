@@ -10,54 +10,12 @@
   font-weight: 500;
   margin-left: 0px;
 }
-.navigation-links1-text1 {
+.navigation-links1-text-in {
   font-size: 10px;
   font-style: normal;
   font-weight: 500;
   margin-left: var(--dl-space-space-oneandhalfunits);
 }
-.navigation-links1-text2 {
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 500;
-  margin-left: var(--dl-space-space-oneandhalfunits);
-}
-.navigation-links1-text3 {
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 500;
-  margin-left: var(--dl-space-space-oneandhalfunits);
-}
-.navigation-links1-text4 {
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 500;
-  margin-left: var(--dl-space-space-oneandhalfunits);
-}
-.navigation-links1-text5 {
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 500;
-  margin-left: var(--dl-space-space-oneandhalfunits);
-}
-.navigation-links1-text6 {
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 500;
-  margin-left: var(--dl-space-space-oneandhalfunits);
-}
-.navigation-links1-text7 {
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 500;
-  margin-left: var(--dl-space-space-oneandhalfunits);
-}
-
-
-
-
-
-
 
 
 @media(max-width: 767px) {
@@ -69,30 +27,7 @@
     margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .navigation-links1-text1 {
-    margin-left: 0;
-    margin-bottom: var(--dl-space-space-unit);
-  }
-  .navigation-links1-text2 {
-    margin-bottom: var(--dl-space-space-unit);
-  }
-  .navigation-links1-text3 {
-    margin-left: 0;
-    margin-bottom: var(--dl-space-space-unit);
-  }
-  .navigation-links1-text4 {
-    margin-left: 0;
-    margin-bottom: var(--dl-space-space-unit);
-  }
-  .navigation-links1-text5 {
-    margin-left: 0;
-    margin-bottom: var(--dl-space-space-unit);
-  }
-  .navigation-links1-text6 {
-    margin-left: 0;
-    margin-bottom: var(--dl-space-space-unit);
-  }
-  .navigation-links1-text7 {
+  .navigation-links1-text-in {
     margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
@@ -119,7 +54,7 @@
   min-height: 25px;
   align-items: center;
   padding-top: var(--dl-space-space-twounits);
-  padding-left: var(--dl-space-space-threeunits);
+  padding-left: var(--dl-space-space-twounits);
   padding-right: var(--dl-space-space-threeunits);
   padding-bottom: var(--dl-space-space-twounits);
   justify-content: space-between;
