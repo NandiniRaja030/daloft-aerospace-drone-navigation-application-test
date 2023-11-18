@@ -359,6 +359,7 @@
 .data-container02 {
   flex: 0 0 auto;
   height: auto;
+  width: 265px;
   display: flex;
   align-self: stretch;
   box-shadow: 5px 5px 10px 0px #656565;
@@ -704,6 +705,31 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #0c2e44d2; 
+}
+
+.cc-display {
+  display: block;
+}
+.ac-display {
+  display: block;
+}
+.ah-display {
+  display: block;
+}
+.pr-display {
+  display: block;
+}
+.gps-display {
+  display: block;
+}
+.yaw-display {
+  display: block;
+}
+.td-display {
+  display: block;
+}
+.msgs-display {
+  display: block;
 }
 
 

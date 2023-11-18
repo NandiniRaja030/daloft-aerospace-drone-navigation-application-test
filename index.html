@@ -199,7 +199,7 @@
 
           <!-- CC & AC -->
           <div class="data-2-container">
-            <div class="data-container01" id="compass-container">
+            <div class="data-container01 cc-display" id="compass-container">
               <div class="head-container01">
                 <span class="head-text01">
                   <span>Compass</span>
@@ -227,7 +227,7 @@
                 </div>
               </div>
             </div>
-            <div class="data-container01" id="accelerometer-container">
+            <div class="data-container01 ac-display" id="accelerometer-container">
               <div class="head-container01">
                 <span class="head-text01">
                   <span>accelerometer&nbsp;&nbsp;</span>
@@ -252,7 +252,7 @@
 
           <!-- AH & PR -->
           <div class="data-2-container">
-            <div class="data-container01" id="altitudeH-container">
+            <div class="data-container01 ah-display" id="altitudeH-container">
               <div class="head-container01">
                 <span class="head-text03">Altitude hold</span>
               </div>
@@ -283,7 +283,7 @@
                 </div>
               </div>
             </div>
-            <div class="data-container01" id="PR-container">
+            <div class="data-container01 pr-display" id="PR-container">
               <div class="head-container01">
                 <span class="head-text03">pitch &amp; roll</span>
               </div>
@@ -319,7 +319,7 @@
 
           <!-- GPS & YAW -->
           <div class="data-2-container">
-            <div class="data-container01" id="gpsH-container">
+            <div class="data-container01 gps-display" id="gpsH-container">
               <div class="head-container01">
                 <span class="head-text03">gps hold</span>
               </div>
@@ -350,7 +350,7 @@
                 </div>
               </div>
             </div>
-            <div class="data-container01" id="yaw-container">
+            <div class="data-container01 yaw-display" id="yaw-container">
               <div class="head-container01">
                 <span class="head-text03">yaw</span>
               </div>
@@ -386,7 +386,7 @@
 
           <!-- TD & MSGS -->
           <div class="data-2-container">
-            <div class="data-container01" id="telemetry-container">
+            <div class="data-container01 td-display" id="telemetry-container">
               <div class="head-container01">
                 <span class="head-text03">telemetry data</span>
               </div>
@@ -456,7 +456,7 @@
                 </div>
               </div>
             </div>
-            <div class="data-container02" id="messages-container">
+            <div class="data-container02 msgs-display" id="messages-container">
               <div class="head-container01">
                 <span class="head-text03">MESSAGES</span>
               </div>
@@ -493,3 +493,23 @@
     </div>
   </body>
 </html>
+
+
+
+<!--
+document.getElementById("signUpButton").addEventListener("click", function(button) {    
+  if (document.getElementById("displaySignUp").style.display === "none"){
+ if(document.getElementById("displayLogin").style.display === "block") {
+   document.getElementById("displayLogin").style.display = "none";}             
+    document.getElementById("displaySignUp").style.display = "block";}
+});
+document.getElementById("loginButton").addEventListener("click", function(button) {    
+  if (document.getElementById("displayLogin").style.display === "none"){
+ if(document.getElementById("displaySignUp").style.display === "block"){
+   document.getElementById("displaySignUp").style.display = "none";}
+    document.getElementById("displayLogin").style.display = "block";}
+});
+-->
+
+
+<!-- add an extra style class for the display property -->
