@@ -111,32 +111,30 @@
             class="logo"
           />
           <div class="home-nav">
-            <nav
-              class="navigation-nav"
-            >
+            <nav class="navigation-nav">
               <span class="navigation-text">
-                <span>Compass Calibration</span>
+                <span id="nav-cc">Compass Calibration</span>
               </span>
               <span class="navigation-text-in">
-                <span>Accelerometer Calibration</span>
+                <span id="nav-ac">Accelerometer Calibration</span>
               </span>
               <span class="navigation-text-in">
-                <span>Altitude Hold</span>
+                <span id="nav-ah">Altitude Hold</span>
               </span>
               <span class="navigation-text-in">
-                <span>GPS Hold</span>
+                <span id="nav-gps">GPS Hold</span>
               </span>
               <span class="navigation-text-in">
-                <span>Pitch &amp; Roll</span>
+                <span id="nav-pr">Pitch &amp; Roll</span>
               </span>
               <span class="navigation-text-in">
-                <span>Yaw</span>
+                <span id="nav-yaw">Yaw</span>
               </span>
               <span class="navigation-text-in">
-                <span>Telemetry Data</span>
+                <span id="nav-td">Telemetry Data</span>
               </span>
               <span class="navigation-text-in">
-                <span>Messages</span>
+                <span id="nav-msgs">Messages</span>
               </span>
             </nav>
           </div>
@@ -201,7 +199,7 @@
 
           <!-- CC & AC -->
           <div class="data-2-container">
-            <div class="data-container01">
+            <div class="data-container01" id="compass-container">
               <div class="head-container01">
                 <span class="head-text01">
                   <span>Compass</span>
@@ -229,7 +227,7 @@
                 </div>
               </div>
             </div>
-            <div class="data-container01">
+            <div class="data-container01" id="accelerometer-container">
               <div class="head-container01">
                 <span class="head-text01">
                   <span>accelerometer&nbsp;&nbsp;</span>
@@ -254,7 +252,7 @@
 
           <!-- AH & PR -->
           <div class="data-2-container">
-            <div class="data-container01">
+            <div class="data-container01" id="altitudeH-container">
               <div class="head-container01">
                 <span class="head-text03">Altitude hold</span>
               </div>
@@ -285,7 +283,7 @@
                 </div>
               </div>
             </div>
-            <div class="data-container01">
+            <div class="data-container01" id="PR-container">
               <div class="head-container01">
                 <span class="head-text03">pitch &amp; roll</span>
               </div>
@@ -321,7 +319,7 @@
 
           <!-- GPS & YAW -->
           <div class="data-2-container">
-            <div class="data-container01">
+            <div class="data-container01" id="gpsH-container">
               <div class="head-container01">
                 <span class="head-text03">gps hold</span>
               </div>
@@ -352,7 +350,7 @@
                 </div>
               </div>
             </div>
-            <div class="data-container01">
+            <div class="data-container01" id="yaw-container">
               <div class="head-container01">
                 <span class="head-text03">yaw</span>
               </div>
@@ -388,7 +386,7 @@
 
           <!-- TD & MSGS -->
           <div class="data-2-container">
-            <div class="data-container01">
+            <div class="data-container01" id="telemetry-container">
               <div class="head-container01">
                 <span class="head-text03">telemetry data</span>
               </div>
@@ -458,11 +456,20 @@
                 </div>
               </div>
             </div>
-            <div class="data-container02">
+            <div class="data-container02" id="messages-container">
               <div class="head-container01">
                 <span class="head-text03">MESSAGES</span>
               </div>
               <div class="body-container11">
+                <div class="body-container10">
+                  <span class="body-text08">Text</span>
+                </div>
+                <div class="body-container10">
+                  <span class="body-text08">Text</span>
+                </div>
+                <div class="body-container10">
+                  <span class="body-text08">Text</span>
+                </div>
                 <div class="body-container10">
                   <span class="body-text08">Text</span>
                 </div>

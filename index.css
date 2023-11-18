@@ -517,9 +517,8 @@
 .body-container09 {
   flex: 0 0 auto;
   width: 100%;
-  height: 125px;
+  height: 120px;
   display: flex;
-  flex-wrap: wrap;
   margin-top: var(--dl-space-space-halfunit);
   align-items: flex-start;
   padding-top: 4px;
@@ -528,10 +527,13 @@
   flex-direction: column;
   padding-bottom: 4px;
   background-color: rgba(255, 255, 255, 0.8);
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 .body-container10 {
   flex: 0 0 auto;
   height: auto;
+ 
   display: flex;
   position: relative;
   align-self: stretch;
@@ -548,7 +550,7 @@
 .body-container11 {
   flex: 0 0 auto;
   width: 100%;
-  height: auto;
+  height: 100px;
   display: flex;
   margin-top: 0px;
   align-items: flex-start;
@@ -558,6 +560,8 @@
   flex-direction: column;
   padding-bottom: 4px;
   background-color: rgba(255, 255, 255, 0.8);
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .xyz-container {
@@ -683,6 +687,24 @@
   background-color: rgba(255, 255, 255, 0.78);
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5); 
+  border-radius: 10px;
+  margin: 12px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #0c2e4496;
+  opacity: 0.5; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0c2e44d2; 
+}
 
 
 
