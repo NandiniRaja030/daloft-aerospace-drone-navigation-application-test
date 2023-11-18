@@ -432,6 +432,40 @@
   padding-bottom: 5px;
   justify-content: center;
 }
+.body-container04 {
+  gap: 8px;
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  border-radius: 20px;
+  flex-direction: column;
+}
+.body-container05 {
+  gap: 5px;
+  width: auto;
+  height: 60px;
+  display: flex;
+  align-self: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.body-container06 {
+  flex: 0 0 auto;
+  width: 80px;
+  height: 100%;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  padding-top: 5px;
+  padding-left: 5px;
+  border-radius: 15px;
+  padding-right: 5px;
+  flex-direction: column;
+  padding-bottom: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
 
 .xyz-container {
   gap: 20px;
@@ -536,40 +570,9 @@ RADIO -> STATUS INDOCATOR
 
 
 
-.home-container45 {
-  gap: 8px;
-  flex: 0 0 auto;
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: flex-start;
-  border-radius: 20px;
-  flex-direction: column;
-}
-.home-container46 {
-  gap: 5px;
-  width: auto;
-  height: 60px;
-  display: flex;
-  align-self: flex-start;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.home-container47 {
-  flex: 0 0 auto;
-  width: 80px;
-  height: 100%;
-  display: flex;
-  position: relative;
-  align-items: flex-start;
-  padding-top: 5px;
-  padding-left: 5px;
-  border-radius: 15px;
-  padding-right: 5px;
-  flex-direction: column;
-  padding-bottom: 5px;
-  background-color: rgba(255, 255, 255, 0.8);
-}
+
+
+
 .home-text34 {
   font-size: 12px;
   font-style: normal;
@@ -590,21 +593,7 @@ RADIO -> STATUS INDOCATOR
   text-align: center;
   font-weight: 600;
 }
-.home-container48 {
-  flex: 0 0 auto;
-  width: 80px;
-  height: 100%;
-  display: flex;
-  position: relative;
-  align-items: flex-start;
-  padding-top: 5px;
-  padding-left: 5px;
-  border-radius: 15px;
-  padding-right: 5px;
-  flex-direction: column;
-  padding-bottom: 5px;
-  background-color: rgba(255, 255, 255, 0.8);
-}
+
 .home-text36 {
   color: #0C2E44;
   font-size: 12px;
@@ -626,21 +615,7 @@ RADIO -> STATUS INDOCATOR
   text-align: center;
   font-weight: 600;
 }
-.home-container49 {
-  flex: 0 0 auto;
-  width: 80px;
-  height: 100%;
-  display: flex;
-  position: relative;
-  align-items: flex-start;
-  padding-top: 5px;
-  padding-left: 5px;
-  border-radius: 15px;
-  padding-right: 5px;
-  flex-direction: column;
-  padding-bottom: 5px;
-  background-color: rgba(255, 255, 255, 0.8);
-}
+
 .home-text38 {
   color: #0C2E44;
   font-size: 12px;
@@ -662,30 +637,8 @@ RADIO -> STATUS INDOCATOR
   text-align: center;
   font-weight: 600;
 }
-.home-container50 {
-  gap: 5px;
-  width: auto;
-  height: 60px;
-  display: flex;
-  align-self: flex-start;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.home-container51 {
-  flex: 0 0 auto;
-  width: 80px;
-  height: 100%;
-  display: flex;
-  position: relative;
-  align-items: flex-start;
-  padding-top: 5px;
-  padding-left: 5px;
-  border-radius: 15px;
-  padding-right: 5px;
-  flex-direction: column;
-  padding-bottom: 5px;
-  background-color: rgba(255, 255, 255, 0.8);
-}
+
+
 .home-text40 {
   color: #0C2E44;
   font-size: 12px;
@@ -707,21 +660,7 @@ RADIO -> STATUS INDOCATOR
   text-align: center;
   font-weight: 600;
 }
-.home-container52 {
-  flex: 0 0 auto;
-  width: 80px;
-  height: 100%;
-  display: flex;
-  position: relative;
-  align-items: flex-start;
-  padding-top: 5px;
-  padding-left: 5px;
-  border-radius: 15px;
-  padding-right: 5px;
-  flex-direction: column;
-  padding-bottom: 5px;
-  background-color: rgba(255, 255, 255, 0.8);
-}
+
 .home-text42 {
   color: #0C2E44;
   font-size: 12px;
@@ -743,21 +682,8 @@ RADIO -> STATUS INDOCATOR
   text-align: center;
   font-weight: 600;
 }
-.home-container53 {
-  flex: 0 0 auto;
-  width: 80px;
-  height: 100%;
-  display: flex;
-  position: relative;
-  align-items: flex-start;
-  padding-top: 5px;
-  padding-left: 5px;
-  border-radius: 15px;
-  padding-right: 5px;
-  flex-direction: column;
-  padding-bottom: 5px;
-  background-color: rgba(255, 255, 255, 0.8);
-}
+
+
 .home-text44 {
   color: #0C2E44;
   font-size: 12px;
