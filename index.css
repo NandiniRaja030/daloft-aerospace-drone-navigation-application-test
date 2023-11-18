@@ -312,11 +312,12 @@
   flex-direction: column;
 }
 
-.data-container {
+.data-container01 {
   flex: 0 0 auto;
   width: auto;
+  height: auto;
   display: flex;
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.42);
+  box-shadow: 5px 5px 10px 0px #656565;
   margin-top: var(--dl-space-space-halfunit);
   margin-left: var(--dl-space-space-halfunit);
   padding-top: var(--dl-space-space-halfunit);
@@ -327,7 +328,25 @@
   padding-right: var(--dl-space-space-halfunit);
   flex-direction: column;
   padding-bottom: var(--dl-space-space-halfunit);
-  background-color: rgba(0, 0, 0, 0.50);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.data-container02 {
+  flex: 0 0 auto;
+  height: auto;
+  display: flex;
+  align-self: stretch;
+  box-shadow: 5px 5px 10px 0px #656565;
+  margin-top: var(--dl-space-space-halfunit);
+  margin-left: var(--dl-space-space-halfunit);
+  padding-top: var(--dl-space-space-halfunit);
+  margin-right: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-halfunit);
+  border-radius: 20px;
+  margin-bottom: var(--dl-space-space-halfunit);
+  padding-right: var(--dl-space-space-halfunit);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .head-container01 {
@@ -341,7 +360,21 @@
   flex-direction: column;
   padding-bottom: 4px;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.78);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.head-container02 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: 0px;
+  align-items: flex-start;
+  padding-top: 4px;
+  border-radius: 20px;
+  margin-bottom: 0px;
+  flex-direction: column;
+  padding-bottom: 4px;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .head-text01 {
@@ -465,7 +498,7 @@
   padding-bottom: 5px;
 }
 
-.num-input01 {
+.num-input {
   color: #0C2E44;
   width: 150px;
   height: 20px;
@@ -501,37 +534,7 @@ RADIO -> STATUS INDOCATOR
 
 /*------ TD & MSGS CONTAINER ------*/
 
-.home-container43 {
-  flex: 0 0 auto;
-  width: auto;
-  height: auto;
-  display: flex;
-  box-shadow: 5px 5px 10px 0px #656565;
-  margin-top: var(--dl-space-space-halfunit);
-  margin-left: var(--dl-space-space-halfunit);
-  padding-top: var(--dl-space-space-halfunit);
-  margin-right: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: 20px;
-  margin-bottom: var(--dl-space-space-halfunit);
-  padding-right: var(--dl-space-space-halfunit);
-  flex-direction: column;
-  padding-bottom: var(--dl-space-space-halfunit);
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.home-container44 {
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: flex-start;
-  padding-top: 4px;
-  border-radius: 20px;
-  margin-bottom: var(--dl-space-space-halfunit);
-  flex-direction: column;
-  padding-bottom: 4px;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.8);
-}
+
 
 .home-container45 {
   gap: 8px;
@@ -812,20 +815,7 @@ RADIO -> STATUS INDOCATOR
   color: rgb(255, 255, 255);
   font-size: 12px;
 }
-.home-container56 {
-  width: 100%;
-  height: auto;
-  display: flex;
-  margin-top: 0px;
-  align-items: flex-start;
-  padding-top: 4px;
-  border-radius: 20px;
-  margin-bottom: 0px;
-  flex-direction: column;
-  padding-bottom: 4px;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.8);
-}
+
 
 .home-container57 {
   flex: 0 0 auto;
@@ -1010,37 +1000,8 @@ RADIO -> STATUS INDOCATOR
   margin-left: 5px;
   margin-right: 5px;
 }
-.home-container64 {
-  flex: 0 0 auto;
-  height: auto;
-  display: flex;
-  align-self: stretch;
-  box-shadow: 5px 5px 10px 0px #656565;
-  margin-top: var(--dl-space-space-halfunit);
-  margin-left: var(--dl-space-space-halfunit);
-  padding-top: var(--dl-space-space-halfunit);
-  margin-right: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: 20px;
-  margin-bottom: var(--dl-space-space-halfunit);
-  padding-right: var(--dl-space-space-halfunit);
-  flex-direction: column;
-  padding-bottom: var(--dl-space-space-halfunit);
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.home-container65 {
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: flex-start;
-  padding-top: 4px;
-  border-radius: 20px;
-  margin-bottom: var(--dl-space-space-halfunit);
-  flex-direction: column;
-  padding-bottom: 4px;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, 0.8);
-}
+
+
 
 .home-container66 {
   flex: 0 0 auto;
