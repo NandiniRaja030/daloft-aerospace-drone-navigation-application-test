@@ -1,16 +1,16 @@
-.navigation-links1-nav {
+.navigation-nav {
   flex: 0 0 auto;
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-.navigation-links1-text {
+.navigation-text {
   font-size: 10px;
   font-style: normal;
   font-weight: 500;
   margin-left: 0px;
 }
-.navigation-links1-text-in {
+.navigation-text-in {
   font-size: 10px;
   font-style: normal;
   font-weight: 500;
@@ -19,21 +19,21 @@
 
 
 @media(max-width: 767px) {
-  .navigation-links1-nav {
+  .navigation-nav {
     align-items: flex-start;
     flex-direction: column;
   }
-  .navigation-links1-text {
+  .navigation-text {
     margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .navigation-links1-text-in {
+  .navigation-text-in {
     margin-left: 0;
     margin-bottom: var(--dl-space-space-unit);
   }
 }
 
-.home-container {
+.page-container {
   width: 100%;
   display: flex;
   overflow: auto;
@@ -46,7 +46,7 @@
   justify-content: flex-start;
   background-color: #ddfeff;
 }
-.home-header {
+.header {
   height: 50px;
   display: flex;
   max-width: 100%;
@@ -60,8 +60,8 @@
   justify-content: space-between;
   background-color: #ffffff;
 }
-.home-image {
-  height: 2rem;
+.logo {
+  height: 3rem;
 }
 .home-nav {
   flex: 0 0 auto;
@@ -274,7 +274,18 @@
 .home-radiobutton {
   margin-left: 20px;
 }
-.home-container02 {
+
+
+
+
+
+
+
+
+
+
+/*------ DATA TABS CONTAINER ------*/
+.data-4-container {
   gap: 20px;
   flex: 0 0 auto;
   left: 0px;
@@ -291,7 +302,12 @@
   padding-bottom: 10px;
   justify-content: flex-end;
 }
-.home-container03 {
+
+
+
+
+/*------ CC & AC CONTAINER ------*/
+.data-2-container {
   flex: 0 0 auto;
   width: auto;
   height: auto;
@@ -299,7 +315,9 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.home-container04 {
+
+
+.data-container {
   flex: 0 0 auto;
   width: auto;
   display: flex;
@@ -316,6 +334,8 @@
   padding-bottom: var(--dl-space-space-halfunit);
   background-color: rgba(0, 0, 0, 0.50);
 }
+
+
 .home-container05 {
   width: 100%;
   height: auto;
@@ -443,23 +463,9 @@
   border-color: #0C2E44;
   border-radius: 15px;
 }
-.home-container11 {
-  flex: 0 0 auto;
-  width: auto;
-  display: flex;
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.42);
-  margin-top: var(--dl-space-space-halfunit);
-  margin-left: var(--dl-space-space-halfunit);
-  padding-top: var(--dl-space-space-halfunit);
-  margin-right: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: 20px;
-  margin-bottom: var(--dl-space-space-halfunit);
-  padding-right: var(--dl-space-space-halfunit);
-  flex-direction: column;
-  padding-bottom: var(--dl-space-space-halfunit);
-  background-color: rgba(0, 0, 0, 0.50);
-}
+
+
+
 .home-container12 {
   width: 100%;
   height: auto;
@@ -534,29 +540,13 @@
   border-color: #0C2E44;
   border-radius: 15px;
 }
-.home-container16 {
-  flex: 0 0 auto;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.home-container17 {
-  flex: 0 0 auto;
-  width: auto;
-  display: flex;
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.42);
-  margin-top: var(--dl-space-space-halfunit);
-  margin-left: var(--dl-space-space-halfunit);
-  padding-top: var(--dl-space-space-halfunit);
-  margin-right: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: 20px;
-  margin-bottom: var(--dl-space-space-halfunit);
-  padding-right: var(--dl-space-space-halfunit);
-  flex-direction: column;
-  padding-bottom: var(--dl-space-space-halfunit);
-  background-color: rgba(0, 0, 0, 0.50);
-}
+
+
+
+
+/*------ AH & PR CONTAINER ------*/
+
+
 .home-container18 {
   width: 100%;
   height: auto;
@@ -698,23 +688,9 @@
   padding-bottom: 5px;
   background-color: rgba(255, 255, 255, 0.78);
 }
-.home-container23 {
-  flex: 0 0 auto;
-  width: auto;
-  display: flex;
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.42);
-  margin-top: var(--dl-space-space-halfunit);
-  margin-left: var(--dl-space-space-halfunit);
-  padding-top: var(--dl-space-space-halfunit);
-  margin-right: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: 20px;
-  margin-bottom: var(--dl-space-space-halfunit);
-  padding-right: var(--dl-space-space-halfunit);
-  flex-direction: column;
-  padding-bottom: var(--dl-space-space-halfunit);
-  background-color: rgba(0, 0, 0, 0.50);
-}
+
+
+
 .home-container24 {
   width: 100%;
   height: auto;
@@ -856,30 +832,13 @@
   padding-bottom: 5px;
   background-color: rgba(255, 255, 255, 0.78);
 }
-.home-container29 {
-  flex: 0 0 auto;
-  height: auto;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.home-container30 {
-  flex: 0 0 auto;
-  width: auto;
-  display: flex;
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.42);
-  margin-top: var(--dl-space-space-halfunit);
-  margin-left: var(--dl-space-space-halfunit);
-  padding-top: var(--dl-space-space-halfunit);
-  margin-right: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: 20px;
-  margin-bottom: var(--dl-space-space-halfunit);
-  padding-right: var(--dl-space-space-halfunit);
-  flex-direction: column;
-  padding-bottom: var(--dl-space-space-halfunit);
-  background-color: rgba(0, 0, 0, 0.50);
-}
+
+
+
+
+/*------ GPS & YAW CONTAINER ------*/
+
+
 .home-container31 {
   width: 100%;
   height: auto;
@@ -1021,23 +980,9 @@
   padding-bottom: 5px;
   background-color: rgba(255, 255, 255, 0.78);
 }
-.home-container36 {
-  flex: 0 0 auto;
-  width: auto;
-  display: flex;
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.42);
-  margin-top: var(--dl-space-space-halfunit);
-  margin-left: var(--dl-space-space-halfunit);
-  padding-top: var(--dl-space-space-halfunit);
-  margin-right: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: 20px;
-  margin-bottom: var(--dl-space-space-halfunit);
-  padding-right: var(--dl-space-space-halfunit);
-  flex-direction: column;
-  padding-bottom: var(--dl-space-space-halfunit);
-  background-color: rgba(0, 0, 0, 0.50);
-}
+
+
+
 .home-container37 {
   width: 100%;
   height: auto;
@@ -1179,13 +1124,12 @@
   padding-bottom: 5px;
   background-color: rgba(255, 255, 255, 0.78);
 }
-.home-container42 {
-  flex: 0 0 auto;
-  width: auto;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
+
+
+
+
+/*------ TD & MSGS CONTAINER ------*/
+
 .home-container43 {
   flex: 0 0 auto;
   width: auto;

@@ -100,44 +100,50 @@
     <div>
       <link href="./index.css" rel="stylesheet" />
 
-      <div class="home-container">
-        <header data-role="Header" class="home-header">
+      <div class="page-container">
+
+
+        <!-- HEADER SECTION -->
+        <header data-role="Header" class="header">
           <img
             alt="logo"
             src="assets/DaloftLogo.png"
-            class="home-image"
+            class="logo"
           />
           <div class="home-nav">
             <nav
-              class="navigation-links1-nav navigation-links1-root-class-name17"
+              class="navigation-nav"
             >
-              <span class="navigation-links1-text">
+              <span class="navigation-text">
                 <span>Compass Calibration</span>
               </span>
-              <span class="navigation-links1-text-in">
+              <span class="navigation-text-in">
                 <span>Accelerometer Calibration</span>
               </span>
-              <span class="navigation-links1-text-in">
+              <span class="navigation-text-in">
                 <span>Altitude Hold</span>
               </span>
-              <span class="navigation-links1-text-in">
+              <span class="navigation-text-in">
                 <span>GPS Hold</span>
               </span>
-              <span class="navigation-links1-text-in">
+              <span class="navigation-text-in">
                 <span>Pitch &amp; Roll</span>
               </span>
-              <span class="navigation-links1-text-in">
+              <span class="navigation-text-in">
                 <span>Yaw</span>
               </span>
-              <span class="navigation-links1-text-in">
+              <span class="navigation-text-in">
                 <span>Telemetry Data</span>
               </span>
-              <span class="navigation-links1-text-in">
+              <span class="navigation-text-in">
                 <span>Messages</span>
               </span>
             </nav>
           </div>
         </header>
+
+
+        <!-- COM SELECTION & REFRESH SECTION -->
         <div class="home-container01">
           <div data-thq="thq-dropdown" class="home-thq-dropdown list-item">
             <div data-thq="thq-dropdown-toggle" class="home-dropdown-toggle">
@@ -186,9 +192,16 @@
           <button type="button" class="home-button button">Connect</button>
           <input type="radio" name="radio" class="home-radiobutton" />
         </div>
-        <div class="home-container02">
-          <div class="home-container03">
-            <div class="home-container04">
+
+
+
+        <!-- DATA TABS SECTION -->
+        <div class="data-4-container">
+
+
+          <!-- CC & AC -->
+          <div class="data-2-container">
+            <div class="data-container">
               <div class="home-container05">
                 <span class="home-text05">
                   <span>Compass</span>
@@ -216,7 +229,7 @@
                 </div>
               </div>
             </div>
-            <div class="home-container11">
+            <div class="data-container">
               <div class="home-container12">
                 <span class="home-text12">
                   <span>accelerometer&nbsp;&nbsp;</span>
@@ -237,8 +250,11 @@
               </div>
             </div>
           </div>
-          <div class="home-container16">
-            <div class="home-container17">
+
+
+          <!-- AH & PR -->
+          <div class="data-2-container">
+            <div class="data-container">
               <div class="home-container18">
                 <span class="home-text17">Altitude hold</span>
               </div>
@@ -269,7 +285,7 @@
                 </div>
               </div>
             </div>
-            <div class="home-container23">
+            <div class="data-container">
               <div class="home-container24">
                 <span class="home-text21">pitch &amp; roll</span>
               </div>
@@ -301,8 +317,11 @@
               </div>
             </div>
           </div>
-          <div class="home-container29">
-            <div class="home-container30">
+
+
+          <!-- GPS & YAW -->
+          <div class="data-2-container">
+            <div class="data-container">
               <div class="home-container31">
                 <span class="home-text25">gps hold</span>
               </div>
@@ -333,7 +352,7 @@
                 </div>
               </div>
             </div>
-            <div class="home-container36">
+            <div class="data-container">
               <div class="home-container37">
                 <span class="home-text29">yaw</span>
               </div>
@@ -365,7 +384,10 @@
               </div>
             </div>
           </div>
-          <div class="home-container42">
+
+
+          <!-- TD & MSGS -->
+          <div class="data-2-container">
             <div class="home-container43">
               <div class="home-container44">
                 <span class="home-text33">telemetry data</span>
