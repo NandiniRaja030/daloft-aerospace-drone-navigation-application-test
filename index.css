@@ -355,6 +355,14 @@
 .head-text02 {
   font-size: 8px;
 }
+.head-text03 {
+  color: #0C2E44;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
 
 
 .body-container01 {
@@ -379,6 +387,17 @@
   padding-right: 12px;
   padding-bottom: 5px;
   justify-content: space-between;
+}
+.body-container03 {
+  height: auto;
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  padding-top: 5px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 5px;
+  justify-content: center;
 }
 
 .xyz-container {
@@ -416,24 +435,7 @@
   border-radius: 15px;
 }
 
-
-
-
-
-
-
-.home-container14 {
-  height: auto;
-  display: flex;
-  align-self: stretch;
-  align-items: center;
-  padding-top: 5px;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-bottom: 5px;
-  justify-content: center;
-}
-.home-text16 {
+.body-text01 {
   color: #0c2e44;
   font-size: 12px;
 }
@@ -457,15 +459,6 @@ RADIO -> STATUS INDOCATOR
 /*------ AH & PR CONTAINER ------*/
 
 
-
-.home-text17 {
-  color: #0C2E44;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  padding-left: 10px;
-  text-transform: uppercase;
-}
 
 
 
@@ -551,14 +544,6 @@ RADIO -> STATUS INDOCATOR
 
 
 
-.home-text21 {
-  color: rgb(12, 46, 68);
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  padding-left: 10px;
-  text-transform: uppercase;
-}
 
 
 
@@ -648,14 +633,7 @@ RADIO -> STATUS INDOCATOR
 
 
 
-.home-text25 {
-  color: rgb(12, 46, 68);
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  padding-left: 10px;
-  text-transform: uppercase;
-}
+
 
 
 
@@ -741,14 +719,6 @@ RADIO -> STATUS INDOCATOR
 
 
 
-.home-text29 {
-  color: rgb(12, 46, 68);
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  padding-left: 10px;
-  text-transform: uppercase;
-}
 
 
 
@@ -867,14 +837,7 @@ RADIO -> STATUS INDOCATOR
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.8);
 }
-.home-text33 {
-  color: rgb(12, 46, 68);
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  padding-left: 10px;
-  text-transform: uppercase;
-}
+
 .home-container45 {
   gap: 8px;
   flex: 0 0 auto;
@@ -1168,14 +1131,7 @@ RADIO -> STATUS INDOCATOR
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.8);
 }
-.home-text48 {
-  color: #0C2E44;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  padding-left: 10px;
-  text-transform: uppercase;
-}
+
 .home-container57 {
   flex: 0 0 auto;
   width: 100%;
@@ -1390,14 +1346,7 @@ RADIO -> STATUS INDOCATOR
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.8);
 }
-.home-text61 {
-  color: rgb(12, 46, 68);
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
-  padding-left: 10px;
-  text-transform: uppercase;
-}
+
 .home-container66 {
   flex: 0 0 auto;
   width: 100%;
