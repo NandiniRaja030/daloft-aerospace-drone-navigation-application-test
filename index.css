@@ -742,3 +742,30 @@ RADIO -> STATUS INDOCATOR
   margin-left: 10px;
   margin-right: 0px;
 }
+
+
+.status-indicator {
+    content: ' ';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 10px;
+    border: 1px solid #000;
+    border-radius: 7px;
+    align-items: center;
+    margin-top: 6px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    
+    background-color: #94E185;
+    border-color: #78D965;
+    box-shadow: 0px 0px 4px 1px #94E185;
+
+    /*background-color: #C9404D;
+    border-color: #C42C3B;
+    box-shadow: 0px 0px 4px 1px #C9404D;*/
+
+    /*background-color: #f89029;
+    border-color: #f89029;
+    box-shadow: 0px 0px 4px 1px #f89029;*/
+}
