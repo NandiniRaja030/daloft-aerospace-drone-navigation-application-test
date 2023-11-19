@@ -112,7 +112,17 @@
           />
           <div class="home-nav">
             <nav class="navigation-nav">
-              <span class="navigation-text">
+              <button onclick="funCC()" class="navigation-text" id="nav-cc">Compass Calibration</button>
+              <button onclick="funAC()" class="navigation-text-in" id="nav-ac">Accelerometer Calibration</button>
+              <button onclick="funAH()" class="navigation-text-in" id="nav-ah">Altitude Hold</button>
+              <button onclick="funGPS()" class="navigation-text-in" id="nav-gps">GPS Hold</button>
+              <button onclick="funPR()" class="navigation-text-in" id="nav-pr">Pitch & Roll</button>
+              <button onclick="funYAW()" class="navigation-text-in" id="nav-yaw">Yaw</button>
+              <button onclick="funTD()" class="navigation-text-in" id="nav-td">Telemetry Data</button>
+              <button onclick="funMSGS()" class="navigation-text-in" id="nav-msgs">Messages</button>
+
+
+              <!-- <span class="navigation-text">
                 <span id="nav-cc">Compass Calibration</span>
               </span>
               <span class="navigation-text-in">
@@ -135,7 +145,7 @@
               </span>
               <span class="navigation-text-in">
                 <span id="nav-msgs">Messages</span>
-              </span>
+              </span> -->
             </nav>
           </div>
         </header>
@@ -199,7 +209,7 @@
 
           <!-- CC & AC -->
           <div class="data-2-container">
-            <div class="data-container01 cc-display" id="compass-container">
+            <div class="data-container01" style="display: none;" id="compass-container">
               <div class="head-container01">
                 <span class="head-text01">
                   <span>Compass</span>
@@ -227,7 +237,7 @@
                 </div>
               </div>
             </div>
-            <div class="data-container01 ac-display" id="accelerometer-container">
+            <div class="data-container01" style="display: none;" id="accelerometer-container">
               <div class="head-container01">
                 <span class="head-text01">
                   <span>accelerometer&nbsp;&nbsp;</span>
@@ -252,7 +262,7 @@
 
           <!-- AH & PR -->
           <div class="data-2-container">
-            <div class="data-container01 ah-display" id="altitudeH-container">
+            <div class="data-container01" style="display: none;" id="altitudeH-container">
               <div class="head-container01">
                 <span class="head-text03">Altitude hold</span>
               </div>
@@ -283,7 +293,7 @@
                 </div>
               </div>
             </div>
-            <div class="data-container01 pr-display" id="PR-container">
+            <div class="data-container01" style="display: none;" id="PR-container">
               <div class="head-container01">
                 <span class="head-text03">pitch &amp; roll</span>
               </div>
@@ -319,7 +329,7 @@
 
           <!-- GPS & YAW -->
           <div class="data-2-container">
-            <div class="data-container01 gps-display" id="gpsH-container">
+            <div class="data-container01" style="display: none;" id="gpsH-container">
               <div class="head-container01">
                 <span class="head-text03">gps hold</span>
               </div>
@@ -350,7 +360,7 @@
                 </div>
               </div>
             </div>
-            <div class="data-container01 yaw-display" id="yaw-container">
+            <div class="data-container01" style="display: none;" id="yaw-container">
               <div class="head-container01">
                 <span class="head-text03">yaw</span>
               </div>
@@ -386,7 +396,7 @@
 
           <!-- TD & MSGS -->
           <div class="data-2-container">
-            <div class="data-container01 td-display" id="telemetry-container">
+            <div class="data-container01" style="display: none;" id="telemetry-container">
               <div class="head-container01">
                 <span class="head-text03">telemetry data</span>
               </div>
@@ -456,7 +466,7 @@
                 </div>
               </div>
             </div>
-            <div class="data-container02 msgs-display" id="messages-container">
+            <div class="data-container02" style="display: none;" id="messages-container">
               <div class="head-container01">
                 <span class="head-text03">MESSAGES</span>
               </div>
@@ -491,25 +501,83 @@
         </div>
       </div>
     </div>
+
+    <script>
+
+      function funCC () {
+        var x = document.getElementById("compass-container");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      function funAC () {
+        var x = document.getElementById("accelerometer-container");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      
+      function funAH () {
+        var x = document.getElementById("altitudeH-container");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      function funGPS () {
+        var x = document.getElementById("gpsH-container");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      
+      function funPR () {
+        var x = document.getElementById("PR-container");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      function funYAW () {
+        var x = document.getElementById("yaw-container");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      
+      function funTD () {
+        var x = document.getElementById("telemetry-container");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      function funMSGS () {
+        var x = document.getElementById("messages-container");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      
+
+    </script>
+
   </body>
 </html>
-
-
-
-<!--
-document.getElementById("signUpButton").addEventListener("click", function(button) {    
-  if (document.getElementById("displaySignUp").style.display === "none"){
- if(document.getElementById("displayLogin").style.display === "block") {
-   document.getElementById("displayLogin").style.display = "none";}             
-    document.getElementById("displaySignUp").style.display = "block";}
-});
-document.getElementById("loginButton").addEventListener("click", function(button) {    
-  if (document.getElementById("displayLogin").style.display === "none"){
- if(document.getElementById("displaySignUp").style.display === "block"){
-   document.getElementById("displaySignUp").style.display = "none";}
-    document.getElementById("displayLogin").style.display = "block";}
-});
--->
-
-
-<!-- add an extra style class for the display property -->

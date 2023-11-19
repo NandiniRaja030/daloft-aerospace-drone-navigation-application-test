@@ -3,18 +3,17 @@
   display: flex;
   align-items: center;
   flex-direction: row;
+  gap: 10px;
 }
 .navigation-text {
   font-size: 10px;
   font-style: normal;
   font-weight: 500;
-  margin-left: 0px;
 }
 .navigation-text-in {
   font-size: 10px;
   font-style: normal;
   font-weight: 500;
-  margin-left: var(--dl-space-space-oneandhalfunits);
 }
 
 
@@ -707,6 +706,8 @@
   background: #0c2e44d2; 
 }
 
+
+/*------
 .cc-display {
   display: block;
 }
@@ -731,7 +732,7 @@
 .msgs-display {
   display: block;
 }
-
+------*/
 
 
 /*------ 
