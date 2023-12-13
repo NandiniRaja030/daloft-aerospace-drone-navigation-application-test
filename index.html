@@ -99,9 +99,10 @@
     <link rel="stylesheet" href="./style.css" />
     <div>
       <link href="./index.css" rel="stylesheet" />
+      
 
       <div class="page-container">
-
+        
 
         <!-- HEADER SECTION -->
         <header data-role="Header" class="header">
@@ -150,7 +151,8 @@
           </div>
         </header>
 
-
+        
+        <div class="map" id="map"></div>
         <!-- COM SELECTION & REFRESH SECTION -->
         <div class="home-container01">
           <div data-thq="thq-dropdown" class="home-thq-dropdown list-item">
@@ -201,7 +203,7 @@
           <input type="radio" name="radio" class="home-radiobutton" />
         </div>
 
-
+        
 
         <!-- DATA TABS SECTION -->
         <div class="data-4-container">
@@ -499,6 +501,7 @@
             </div>
           </div>
         </div>
+        </div>
       </div>
     </div>
 
@@ -578,6 +581,20 @@
       
 
     </script>
+
+    <script>
+      function initMap(){
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -30, lng: 150},
+        zoom: 20,
+        mapID: 'fae798d3913c174e'
+    });
+}
+    </script>
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsWzm0DrilGSwmdkDORaeDq61_ZA6vsPY&callback=initMap">
+</script>
+    <script src="/app.js"></script>
 
   </body>
 </html>
