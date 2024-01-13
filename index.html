@@ -11,55 +11,82 @@
     <meta property="twitter:card" content="summary_large_image" />
 
     <style data-tag="reset-style-sheet">
-      html {  
+      html {
         line-height: 1.15;
       }
-      body {  
+      body {
         margin: 0;
       }
-      * {  
-        box-sizing: border-box;  
-        border-width: 0;  
+      * {
+        box-sizing: border-box;
+        border-width: 0;
         border-style: solid;
       }
-      p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  
-        margin: 0;  
+      p,
+      li,
+      ul,
+      pre,
+      div,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      figure,
+      blockquote,
+      figcaption {
+        margin: 0;
         padding: 0;
       }
-      button {  
-        background-color: transparent;
+      button {
+        background-color: #2d9c3c;
       }
-      button,input,optgroup,select,textarea {  
-        font-family: inherit;  
-        font-size: 100%;  
-        line-height: 1.15;  
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
         margin: 0;
       }
-      button,select {  
+      button,
+      select {
         text-transform: none;
       }
-      button,[type="button"],[type="reset"],[type="submit"] {  
+      button,
+      [type="button"],
+      [type="reset"],
+      [type="submit"] {
         -webkit-appearance: button;
       }
-      button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  
-        border-style: none;  
+      button::-moz-focus-inner,
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner {
+        border-style: none;
         padding: 0;
       }
-      button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  
+      button:-moz-focus,
+      [type="button"]:-moz-focus,
+      [type="reset"]:-moz-focus,
+      [type="submit"]:-moz-focus {
         outline: 1px dotted ButtonText;
       }
-      a {  
-        color: inherit;  
+      a {
+        color: inherit;
         text-decoration: inherit;
       }
-      input {  
+      input {
         padding: 2px 4px;
       }
-      img {  
+      img {
         display: block;
       }
-      html { 
-        scroll-behavior: smooth  
+      html {
+        scroll-behavior: smooth;
       }
     </style>
     <style data-tag="default-style-sheet">
@@ -70,14 +97,13 @@
 
       body {
         font-weight: 400;
-        font-style:normal;
+        font-style: normal;
         text-decoration: none;
         text-transform: none;
         letter-spacing: normal;
         line-height: 1.15;
         color: var(--dl-color-gray-black);
         background-color: var(--dl-color-gray-white);
-
       }
     </style>
     <link
@@ -87,12 +113,12 @@
     />
     <style>
       [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
-          display: flex;
-        }
+        display: flex;
+      }
 
-        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
-          transform: rotate(90deg);
-        }
+      [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+        transform: rotate(90deg);
+      }
     </style>
   </head>
   <body>
@@ -101,26 +127,47 @@
       <link href="./index.css" rel="stylesheet" />
 
       <div class="page-container">
-
-
         <!-- HEADER SECTION -->
         <header data-role="Header" class="header">
-          <img
-            alt="logo"
-            src="assets/DaloftLogo.png"
-            class="logo"
-          />
+          <img alt="logo" src="assets/DaloftLogo.png" class="logo" />
           <div class="home-nav">
             <nav class="navigation-nav">
-              <button onclick="funCC()" class="navigation-text" id="nav-cc">Compass Calibration</button>
-              <button onclick="funAC()" class="navigation-text-in" id="nav-ac">Accelerometer Calibration</button>
-              <button onclick="funAH()" class="navigation-text-in" id="nav-ah">Altitude Hold</button>
-              <button onclick="funGPS()" class="navigation-text-in" id="nav-gps">GPS Hold</button>
-              <button onclick="funPR()" class="navigation-text-in" id="nav-pr">Pitch & Roll</button>
-              <button onclick="funYAW()" class="navigation-text-in" id="nav-yaw">Yaw</button>
-              <button onclick="funTD()" class="navigation-text-in" id="nav-td">Telemetry Data</button>
-              <button onclick="funMSGS()" class="navigation-text-in" id="nav-msgs">Messages</button>
-
+              <button onclick="funCC()" class="navigation-text" id="nav-cc">
+                Compass Calibration
+              </button>
+              <button onclick="funAC()" class="navigation-text-in" id="nav-ac">
+                Accelerometer Calibration
+              </button>
+              <button onclick="funAH()" class="navigation-text-in" id="nav-ah">
+                Altitude Hold
+              </button>
+              <button
+                onclick="funGPS()"
+                class="navigation-text-in"
+                id="nav-gps"
+              >
+                GPS Hold
+              </button>
+              <button onclick="funPR()" class="navigation-text-in" id="nav-pr">
+                Pitch & Roll
+              </button>
+              <button
+                onclick="funYAW()"
+                class="navigation-text-in"
+                id="nav-yaw"
+              >
+                Yaw
+              </button>
+              <button onclick="funTD()" class="navigation-text-in" id="nav-td">
+                Telemetry Data
+              </button>
+              <button
+                onclick="funMSGS()"
+                class="navigation-text-in"
+                id="nav-msgs"
+              >
+                Messages
+              </button>
 
               <!-- <span class="navigation-text">
                 <span id="nav-cc">Compass Calibration</span>
@@ -149,7 +196,6 @@
             </nav>
           </div>
         </header>
-
 
         <!-- COM SELECTION & REFRESH SECTION -->
         <div class="home-container01">
@@ -201,15 +247,15 @@
           <input type="radio" name="radio" class="home-radiobutton" />
         </div>
 
-
-
         <!-- DATA TABS SECTION -->
         <div class="data-4-container">
-
-
           <!-- CC & AC -->
           <div class="data-2-container">
-            <div class="data-container01" style="display: none;" id="compass-container">
+            <div
+              class="data-container01"
+              style="display: none"
+              id="compass-container"
+            >
               <div class="head-container01">
                 <span class="head-text01">
                   <span>Compass</span>
@@ -237,13 +283,18 @@
                 </div>
               </div>
             </div>
-            <div class="data-container01" style="display: none;" id="accelerometer-container">
+            <div
+              class="data-container01"
+              style="display: none"
+              id="accelerometer-container"
+            >
               <div class="head-container01">
                 <span class="head-text01">
                   <span>accelerometer&nbsp;&nbsp;</span>
                   <br />
                   <span class="head-text02">claibration</span>
                 </span>
+                <!-- close here  -->
               </div>
               <div class="body-container01">
                 <div class="body-container03">
@@ -259,10 +310,13 @@
             </div>
           </div>
 
-
           <!-- AH & PR -->
           <div class="data-2-container">
-            <div class="data-container01" style="display: none;" id="altitudeH-container">
+            <div
+              class="data-container01"
+              style="display: none"
+              id="altitudeH-container"
+            >
               <div class="head-container01">
                 <span class="head-text03">Altitude hold</span>
               </div>
@@ -293,7 +347,11 @@
                 </div>
               </div>
             </div>
-            <div class="data-container01" style="display: none;" id="PR-container">
+            <div
+              class="data-container01"
+              style="display: none"
+              id="PR-container"
+            >
               <div class="head-container01">
                 <span class="head-text03">pitch &amp; roll</span>
               </div>
@@ -326,10 +384,13 @@
             </div>
           </div>
 
-
           <!-- GPS & YAW -->
           <div class="data-2-container">
-            <div class="data-container01" style="display: none;" id="gpsH-container">
+            <div
+              class="data-container01"
+              style="display: none"
+              id="gpsH-container"
+            >
               <div class="head-container01">
                 <span class="head-text03">gps hold</span>
               </div>
@@ -360,7 +421,11 @@
                 </div>
               </div>
             </div>
-            <div class="data-container01" style="display: none;" id="yaw-container">
+            <div
+              class="data-container01"
+              style="display: none"
+              id="yaw-container"
+            >
               <div class="head-container01">
                 <span class="head-text03">yaw</span>
               </div>
@@ -393,10 +458,13 @@
             </div>
           </div>
 
-
           <!-- TD & MSGS -->
           <div class="data-2-container">
-            <div class="data-container01" style="display: none;" id="telemetry-container">
+            <div
+              class="data-container01"
+              style="display: none"
+              id="telemetry-container"
+            >
               <div class="head-container01">
                 <span class="head-text03">telemetry data</span>
               </div>
@@ -433,7 +501,7 @@
               <div class="body-container07">
                 <span class="body-text06">flight mode</span>
                 <div class="body-container08">
-                  <span class="body-text07">Manual</span>
+                  <span class="body-text07" style="color: red">Manual</span>
                 </div>
               </div>
               <div class="head-container02">
@@ -466,7 +534,11 @@
                 </div>
               </div>
             </div>
-            <div class="data-container02" style="display: none;" id="messages-container">
+            <div
+              class="data-container02"
+              style="display: none"
+              id="messages-container"
+            >
               <div class="head-container01">
                 <span class="head-text03">MESSAGES</span>
               </div>
@@ -503,8 +575,14 @@
     </div>
 
     <script>
+      window.onload = function () {
+        document.getElementById("close").onclick = function () {
+          this.parentNode.parentNode.remove();
+          return false;
+        };
+      };
 
-      function funCC () {
+      function funCC() {
         var x = document.getElementById("compass-container");
         if (x.style.display === "none") {
           x.style.display = "block";
@@ -513,7 +591,7 @@
         }
       }
 
-      function funAC () {
+      function funAC() {
         var x = document.getElementById("accelerometer-container");
         if (x.style.display === "none") {
           x.style.display = "block";
@@ -521,8 +599,8 @@
           x.style.display = "none";
         }
       }
-      
-      function funAH () {
+
+      function funAH() {
         var x = document.getElementById("altitudeH-container");
         if (x.style.display === "none") {
           x.style.display = "block";
@@ -531,7 +609,7 @@
         }
       }
 
-      function funGPS () {
+      function funGPS() {
         var x = document.getElementById("gpsH-container");
         if (x.style.display === "none") {
           x.style.display = "block";
@@ -539,8 +617,8 @@
           x.style.display = "none";
         }
       }
-      
-      function funPR () {
+
+      function funPR() {
         var x = document.getElementById("PR-container");
         if (x.style.display === "none") {
           x.style.display = "block";
@@ -549,7 +627,7 @@
         }
       }
 
-      function funYAW () {
+      function funYAW() {
         var x = document.getElementById("yaw-container");
         if (x.style.display === "none") {
           x.style.display = "block";
@@ -557,8 +635,8 @@
           x.style.display = "none";
         }
       }
-      
-      function funTD () {
+
+      function funTD() {
         var x = document.getElementById("telemetry-container");
         if (x.style.display === "none") {
           x.style.display = "block";
@@ -567,7 +645,7 @@
         }
       }
 
-      function funMSGS () {
+      function funMSGS() {
         var x = document.getElementById("messages-container");
         if (x.style.display === "none") {
           x.style.display = "block";
@@ -575,9 +653,6 @@
           x.style.display = "none";
         }
       }
-      
-
     </script>
-
   </body>
 </html>
